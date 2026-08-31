@@ -1,0 +1,7 @@
+.mcp.json
+.claude/settings.local.json
+.playwright-mcp/
+
+temp/
+
+docs2/
