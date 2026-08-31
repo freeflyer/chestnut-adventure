@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Chestnut Adventure</title>
+  <meta name="description" content="A cosy point-and-click adventure about a small chestnut with a big dream.">
+  <meta name="theme-color" content="#1d2433">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='34' r='22' fill='%237aa348'/%3E%3Ccircle cx='32' cy='36' r='14' fill='%238a4a22'/%3E%3Ccircle cx='36' cy='32' r='5' fill='%23fff4dd'/%3E%3Ccircle cx='37' cy='33' r='2.5' fill='%232b1a12'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three.module.js",
+      "three/addons/": "./vendor/addons/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <div id="rotate-hint">
+      <div class="rh-icon">📱⟳</div>
+      <div data-i18n="ui.rotate">Rotate your device</div>
+    </div>
+    <div id="stage-box">
+      <canvas id="stage" aria-label="Chestnut Adventure game stage"></canvas>
+      <div id="vignette"></div>
+      <div id="ui"></div>
+    </div>
+  </div>
+
+  <!-- three.js is an ES module; this one module runs first (deferred, in document order)
+       and hands the library to the classic scripts below through window.THREE -->
+  <script type="module" src="js/three-boot.js"></script>
+
+  <script defer src="js/core/util.js"></script>
+  <script defer src="js/core/tween.js"></script>
+  <script defer src="js/core/kit.js"></script>
+  <script defer src="js/core/audio.js"></script>
+  <script defer src="js/core/i18n.js"></script>
+  <script defer src="js/core/state.js"></script>
+  <script defer src="js/core/engine.js"></script>
+  <script defer src="js/core/dialog.js"></script>
+  <script defer src="js/core/ui.js"></script>
+  <script defer src="js/core/cutscene.js"></script>
+
+  <script defer src="js/lang/en.js"></script>
+  <script defer src="js/lang/uk.js"></script>
+  <script defer src="js/lang/pl.js"></script>
+  <script defer src="js/lang/de.js"></script>
+  <script defer src="js/lang/es.js"></script>
+  <script defer src="js/lang/cs.js"></script>
+  <script defer src="js/lang/fr.js"></script>
+  <script defer src="js/lang/it.js"></script>
+  <script defer src="js/lang/fi.js"></script>
+  <script defer src="js/lang/sv.js"></script>
+
+  <script defer src="js/game/hero.js"></script>
+  <script defer src="js/game/props.js"></script>
+  <script defer src="js/game/models.js"></script>
+  <script defer src="js/game/cast/lowpoly.js"></script>
+  <script defer src="js/game/cast/ted.js"></script>
+  <script defer src="js/game/cast/vera.js"></script>
+  <script defer src="js/game/cast/cat.js"></script>
+  <script defer src="js/game/cast/dusty.js"></script>
+  <script defer src="js/game/cast/magpie.js"></script>
+  <script defer src="js/game/cast/kid.js"></script>
+  <script defer src="js/game/cast/blink.js"></script>
+  <script defer src="js/game/cast/fluff.js"></script>
+  <script defer src="js/game/cast/bees.js"></script>
+  <script defer src="js/game/cast/teddy.js"></script>
+  <script defer src="js/game/cast/dino.js"></script>
+  <script defer src="js/game/cast/duck.js"></script>
+  <script defer src="js/game/cast/gnome.js"></script>
+  <script defer src="js/game/cast/snail.js"></script>
+  <script defer src="js/game/cast/worm.js"></script>
+  <script defer src="js/game/actors.js"></script>
+
+  <script defer src="js/game/scenes/title.js"></script>
+  <script defer src="js/game/scenes/desk.js"></script>
+  <script defer src="js/game/scenes/study.js"></script>
+  <script defer src="js/game/scenes/hallway.js"></script>
+  <script defer src="js/game/scenes/living.js"></script>
+  <script defer src="js/game/scenes/kitchen.js"></script>
+  <script defer src="js/game/scenes/corridor.js"></script>
+  <script defer src="js/game/scenes/bedroom.js"></script>
+  <script defer src="js/game/scenes/bathroom.js"></script>
+  <script defer src="js/game/scenes/wall.js"></script>
+  <script defer src="js/game/scenes/garden.js"></script>
+  <script defer src="js/game/scenes/dream.js"></script>
+  <script defer src="js/game/scenes/duct.js"></script>
+
+  <script defer src="js/game/chapters.js"></script>
+  <script defer src="js/game/cutscenes.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
